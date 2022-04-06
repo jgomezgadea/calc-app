@@ -1,7 +1,7 @@
 /* eslint no-eval: 0 */
 
 // Import
-import React, { useState } from "react"
+import React, { useState, FC } from "react"
 import words from "lodash.words"
 import Functions from "./components/Functions"
 import MathOperations from "./components/MathOperations"
@@ -10,7 +10,7 @@ import Result from "./components/Result"
 import './App.css'
 
 // Generate function
-const App = () => {
+const App: FC = () => {
 
     // Array Destructuring
     const [stack, setStack] = useState("")
